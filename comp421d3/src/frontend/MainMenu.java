@@ -2,11 +2,10 @@ package frontend;
 
 import java.awt.*;
 import java.util.*;
+
+import javax.naming.directory.SearchControls;
 import javax.swing.JFrame;
 
-/**
- *
- */
 public class MainMenu extends JFrame {
 	
 	/**
@@ -31,10 +30,9 @@ public class MainMenu extends JFrame {
 		MessageLabel = new javax.swing.JLabel();
 		LoginButton = new javax.swing.JButton();
 		NewUserButton = new javax.swing.JButton();
-		HighScoresButton = new javax.swing.JButton();
+		SearchButton = new javax.swing.JButton();
 		ExitButton = new javax.swing.JButton();
 		ForgotPasswordCheckBox = new javax.swing.JCheckBox();
-		GuestUserCheckBox =new javax.swing.JCheckBox();
 		ButtonGroup = new javax.swing.ButtonGroup();
 		
 		setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -44,7 +42,7 @@ public class MainMenu extends JFrame {
 		MainPanel.setLayout(null);
 
 		UsernameField.setFont(new java.awt.Font("Tahoma", 1, 14));
-		UsernameField.setForeground(new java.awt.Color(255, 255, 255));
+		UsernameField.setForeground(new java.awt.Color(0, 0, 0));
 
 		MainPanel.add(UsernameField);
 		UsernameField.setBounds(125, 150, 390, 30);
@@ -62,7 +60,7 @@ public class MainMenu extends JFrame {
 		PasswordLabel.setBounds(30, 190, 90, 20);
 
 		PasswordField.setFont(new java.awt.Font("Tahoma", 0, 14)); 
-		PasswordField.setForeground(new java.awt.Color(0, 102, 102));
+		PasswordField.setForeground(new java.awt.Color(0, 0, 0));
 
 		MainPanel.add(PasswordField);
 		PasswordField.setBounds(125, 190, 390, 30);
@@ -94,18 +92,18 @@ public class MainMenu extends JFrame {
 		MainPanel.add(NewUserButton);
 		NewUserButton.setBounds(110, 360, 260, 40);
 
-		HighScoresButton.setBackground(new java.awt.Color(255, 153, 153));
-		HighScoresButton.setFont(new java.awt.Font("Tahoma", 1, 14)); 
-		HighScoresButton.setText("High Scores");
-		HighScoresButton.addActionListener(new java.awt.event.ActionListener() {
+		SearchButton.setBackground(new java.awt.Color(255, 153, 153));
+		SearchButton.setFont(new java.awt.Font("Tahoma", 1, 14)); 
+		SearchButton.setText("Search Catalogue");
+		SearchButton.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
-				HighScoresButtonActionPerformed(evt);
+				SearchButtonActionPerformed(evt);
 			}
 		});
-		MainPanel.add(HighScoresButton);
-		HighScoresButton.setBounds(170, 410, 270, 40);
+		MainPanel.add(SearchButton);
+		SearchButton.setBounds(170, 410, 270, 40);
 
-		ExitButton.setBackground(new java.awt.Color(153, 0, 0));
+		ExitButton.setBackground(new java.awt.Color(255, 247, 0));
 		ExitButton.setFont(new java.awt.Font("Tahoma", 1, 14)); 
 		ExitButton.setText("Exit");
 		ExitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -122,14 +120,7 @@ public class MainMenu extends JFrame {
 		MainPanel.add(ForgotPasswordCheckBox);
 		ForgotPasswordCheckBox.setBounds(320, 320, 125, 25);
 
-		GuestUserCheckBox.setForeground(new java.awt.Color(255, 153, 0));
-		GuestUserCheckBox.setText("Guest User");
-
-		MainPanel.add(GuestUserCheckBox);
-		GuestUserCheckBox.setBounds(460,320,125,25);
-
 		ButtonGroup.add(ForgotPasswordCheckBox);
-		ButtonGroup.add(GuestUserCheckBox);
 
 		javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
 		getContentPane().setLayout(layout);
@@ -176,9 +167,9 @@ public class MainMenu extends JFrame {
 	/**
 	 * 
 	 * @param evt
-	 * Displays the high score screen with the top ten scores and disposes of the the Login screen
+	 * Goes to search window
 	 */
-	private void HighScoresButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+	private void SearchButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                 
 		
 	}                                                
 
@@ -209,13 +200,12 @@ public class MainMenu extends JFrame {
 			}
 		});
 	}
+	
 	// Variables declaration - do not modify
-
 	private javax.swing.JButton ExitButton;
 	private javax.swing.JCheckBox ForgotPasswordCheckBox;
-	private javax.swing.JCheckBox GuestUserCheckBox;
 	private javax.swing.ButtonGroup ButtonGroup;
-	private javax.swing.JButton HighScoresButton;
+	private javax.swing.JButton SearchButton;
 	private javax.swing.JButton LoginButton;
 	private javax.swing.JPanel MainPanel;
 	private javax.swing.JLabel MessageLabel;
