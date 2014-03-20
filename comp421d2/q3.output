@@ -1,0 +1,22 @@
+DB20000I  The SQL command completed successfully.
+
+DB20000I  The SQL command completed successfully.
+
+DB20000I  The SQL command completed successfully.
+
+DB20000I  The SQL command completed successfully.
+
+DB20000I  The SQL command completed successfully.
+
+
+USERNAME             FIRSTNAME                      LASTNAME                       EMAIL                                    PASSWORD       
+-------------------- ------------------------------ ------------------------------ ---------------------------------------- ---------------
+kpatel               Kishan                         Patel                          kpatel@mail.mcgill.ca                    lebronjames23  
+jamesta              James                          Ta                             jamesta@mail.mcgill.ca                   charmander     
+danym                Dany                           Mahmalat                       danym@mail.mcgill.ca                     lionelmessi    
+jsmith2              John                           Smith                          jsmith@gmail.com                         qwerty         
+janey92              Jane                           Patel                          janeybear@gmail.com                      janeeee        
+
+  5 record(s) selected.
+
+

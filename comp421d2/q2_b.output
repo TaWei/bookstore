@@ -1,0 +1,232 @@
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+USERNAME                       SYSIBM    VARCHAR                  20     0 No    
+FIRSTNAME                      SYSIBM    VARCHAR                  30     0 No    
+LASTNAME                       SYSIBM    VARCHAR                  30     0 No    
+EMAIL                          SYSIBM    VARCHAR                  40     0 No    
+PASSWORD                       SYSIBM    VARCHAR                  15     0 No    
+
+  5 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+ISBN                           SYSIBM    VARCHAR                  30     0 No    
+TITLE                          SYSIBM    VARCHAR                 300     0 No    
+SUMMARY                        SYSIBM    VARCHAR                2000     0 Yes   
+GENRE                          SYSIBM    VARCHAR                  50     0 No    
+STOCK                          SYSIBM    INTEGER                   4     0 No    
+
+  5 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+ISBN                           SYSIBM    VARCHAR                  30     0 No    
+INSTANCEID                     SYSIBM    INTEGER                   4     0 No    
+CONDITION                      SYSIBM    VARCHAR                  30     0 No    
+PRICE                          SYSIBM    DECIMAL                  10     2 Yes   
+
+  4 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+AUTHORID                       SYSIBM    INTEGER                   4     0 No    
+FIRSTNAME                      SYSIBM    VARCHAR                  30     0 No    
+LASTNAME                       SYSIBM    VARCHAR                  30     0 No    
+
+  3 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+PUBLISHERID                    SYSIBM    INTEGER                   4     0 No    
+NAME                           SYSIBM    VARCHAR                 100     0 No    
+COUNTRY                        SYSIBM    VARCHAR                  50     0 No    
+
+  3 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+ORDERID                        SYSIBM    INTEGER                   4     0 No    
+ORDERDATE                      SYSIBM    TIMESTAMP                10     0 No    
+ESTARRIVALDATE                 SYSIBM    TIMESTAMP                10     0 Yes   
+TRACKINGNUMBER                 SYSIBM    VARCHAR                  20     0 Yes   
+SHIPPINGMETHOD                 SYSIBM    VARCHAR                  30     0 No    
+SHFEES                         SYSIBM    DECIMAL                  10     2 No    
+PROMOTIONALDISCOUNT            SYSIBM    DECIMAL                  10     2 No    
+FINALCOST                      SYSIBM    DECIMAL                  10     2 No    
+ADDRID                         SYSIBM    INTEGER                   4     0 No    
+
+  9 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+REVIEWID                       SYSIBM    INTEGER                   4     0 No    
+REVIEWDATE                     SYSIBM    TIMESTAMP                10     0 No    
+COMMENTS                       SYSIBM    VARCHAR                 500     0 Yes   
+STARS                          SYSIBM    INTEGER                   4     0 No    
+
+  4 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+ADDRID                         SYSIBM    INTEGER                   4     0 No    
+STREETADDR                     SYSIBM    VARCHAR                 250     0 No    
+CITY                           SYSIBM    VARCHAR                  50     0 No    
+PROVINCE                       SYSIBM    VARCHAR                  50     0 No    
+ZIP                            SYSIBM    VARCHAR                  10     0 No    
+COUNTRY                        SYSIBM    VARCHAR                  50     0 No    
+
+  6 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+COUPONCODE                     SYSIBM    VARCHAR                  20     0 No    
+VALIDFROM                      SYSIBM    TIMESTAMP                10     0 No    
+VALIDUNTIL                     SYSIBM    TIMESTAMP                10     0 No    
+PERCENT                        SYSIBM    DECIMAL                   5     2 No    
+
+  4 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+CARDNUMBER                     SYSIBM    VARCHAR                  20     0 No    
+USERNAME                       SYSIBM    VARCHAR                  20     0 No    
+CARDHOLDERNAME                 SYSIBM    VARCHAR                  60     0 No    
+CARDTYPE                       SYSIBM    VARCHAR                  30     0 No    
+EXPIRYDATE                     SYSIBM    TIMESTAMP                10     0 No    
+CCV2                           SYSIBM    VARCHAR                   5     0 No    
+
+  6 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+REVIEWID                       SYSIBM    INTEGER                   4     0 No    
+ISBN                           SYSIBM    VARCHAR                  30     0 No    
+
+  2 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+USERNAME                       SYSIBM    VARCHAR                  30     0 No    
+ORDERID                        SYSIBM    INTEGER                   4     0 No    
+
+  2 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+ORDERID                        SYSIBM    INTEGER                   4     0 No    
+INSTANCEID                     SYSIBM    INTEGER                   4     0 No    
+ISBN                           SYSIBM    VARCHAR                  30     0 No    
+
+  3 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+AUTHORID                       SYSIBM    INTEGER                   4     0 No    
+ISBN                           SYSIBM    VARCHAR                  30     0 No    
+
+  2 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+PUBLISHERID                    SYSIBM    INTEGER                   4     0 No    
+ISBN                           SYSIBM    VARCHAR                  30     0 No    
+
+  2 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+COUPONCODE                     SYSIBM    VARCHAR                  20     0 No    
+ISBN                           SYSIBM    VARCHAR                  30     0 No    
+
+  2 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+USERNAME                       SYSIBM    VARCHAR                  30     0 No    
+REVIEWID                       SYSIBM    INTEGER                   4     0 No    
+
+  2 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+USERNAME                       SYSIBM    VARCHAR                  30     0 No    
+ADDRID                         SYSIBM    INTEGER                   4     0 No    
+
+  2 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+ADDRID                         SYSIBM    INTEGER                   4     0 No    
+CARDNUMBER                     SYSIBM    VARCHAR                  20     0 No    
+USERNAME                       SYSIBM    VARCHAR                  20     0 No    
+
+  3 record(s) selected.
+
+
+
+Column                         Type      Type
+name                           schema    name               Length   Scale Nulls
+------------------------------ --------- ------------------ -------- ----- ------
+ORDERID                        SYSIBM    INTEGER                   4     0 No    
+CARDNUMBER                     SYSIBM    VARCHAR                  20     0 No    
+USERNAME                       SYSIBM    VARCHAR                  20     0 No    
+
+  3 record(s) selected.
+
+

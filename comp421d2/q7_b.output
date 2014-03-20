@@ -1,0 +1,45 @@
+DB20000I  The SQL command completed successfully.
+
+DB20000I  The SQL command completed successfully.
+
+DB20000I  The SQL command completed successfully.
+
+
+USERNAME             TITLE                                                                                                                                                                                                                                                                                                        ISBN                           ORDERDATE                 
+-------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ------------------------------ --------------------------
+jrsmith              The Undead Pool                                                                                                                                                                                                                                                                                              978-0061957932                 2014-03-04-07.12.11.000000
+janey92              How to Babysit a Grandma                                                                                                                                                                                                                                                                                     978-0385753845                 2014-03-03-17.03.23.000000
+jsmith2              The EveryGirl’s Guide to Life                                                                                                                                                                                                                                                                                978-0061870781                 2014-03-03-12.01.11.000000
+danym                The Body Book: The Law of Hunger, the Science of Strength, and Other Ways to Love Your Amazing Body                                                                                                                                                                                                          978-0062252746                 2014-02-23-09.39.16.000000
+jamesta              New Moon                                                                                                                                                                                                                                                                                                     978-0316231886                 2014-01-06-08.43.11.000000
+kpatel               New Moon                                                                                                                                                                                                                                                                                                     978-0316231886                 2014-01-03-15.08.54.000000
+kpatel               Twilight                                                                                                                                                                                                                                                                                                     978-0316015844                 2014-01-01-03.22.11.000000
+kpatel               Twilight                                                                                                                                                                                                                                                                                                     978-0316015844                 2014-01-01-03.22.11.000000
+kpatel               New Moon                                                                                                                                                                                                                                                                                                     978-0316231886                 2014-01-01-03.22.11.000000
+
+  9 record(s) selected.
+
+
+DB20000I  The SQL command completed successfully.
+
+
+TITLE                                                                                                                                                                                                                                                                                                        ISBN                           STOCK      
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ------------------------------ -----------
+Twilight                                                                                                                                                                                                                                                                                                     978-0316015844                           2
+New Moon                                                                                                                                                                                                                                                                                                     978-0316231886                           3
+
+  2 record(s) selected.
+
+
+
+Current Top Buyers  
+--------------------
+kpatel              
+
+  1 record(s) selected.
+
+
+DB20000I  The SQL command completed successfully.
+
+DB20000I  The SQL command completed successfully.
+

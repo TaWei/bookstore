@@ -1,0 +1,16 @@
+DB20000I  The SQL command completed successfully.
+
+DB20000I  The SQL command completed successfully.
+
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0545N  The requested operation is not allowed because a row does not 
+satisfy the check constraint "CS421G18.BOOK.SQL140311030921980".  
+SQLSTATE=23513
+
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0545N  The requested operation is not allowed because a row does not 
+satisfy the check constraint "CS421G18.REVIEWS.SQL140311030921990".  
+SQLSTATE=23513
+
