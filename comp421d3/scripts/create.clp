@@ -31,7 +31,7 @@ CREATE TABLE Author(authorId INT NOT NULL, firstName varchar(30) NOT NULL, lastN
 
 CREATE TABLE Publisher(publisherId int NOT NULL, name varchar(100) NOT NULL, country varchar(50) NOT NULL, PRIMARY KEY (publisherId))
 
-CREATE TABLE Address(addrId int NOT NULL, addrInfo xml, PRIMARY KEY (addrId))
+CREATE TABLE Address(addrId int NOT NULL, streetAddr varchar(250) NOT NULL, city varchar(50) NOT NULL, province varchar(50) NOT NULL, zip varchar(10) NOT NULL, country varchar(50) NOT NULL, addrInfo xml, PRIMARY KEY (addrId))
 
 CREATE TABLE Orders(orderId int NOT NULL, orderDate timestamp NOT NULL, estArrivalDate timestamp, trackingNumber varchar(20), shippingMethod varchar(30) NOT NULL, shFees decimal(10,2) NOT NULL, promotionalDiscount decimal(10,2) NOT NULL, finalCost decimal(10,2) NOT NULL, addrId int NOT NULL, PRIMARY KEY (orderId), FOREIGN KEY(addrId) REFERENCES Address)
 
