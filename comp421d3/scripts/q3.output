@@ -1,0 +1,53 @@
+--Q3 Output Validation for input '378282246310005' and AuthorID=1
+SELECT OrderId FROM PaidForBy WHERE CardNumber = '378282246310005'
+
+ORDERID
+-----------
+          1
+          2
+
+  2 record(s) selected.
+
+SELECT * FROM Contains WHERE OrderId IN (1,2)
+
+ORDERID     INSTANCEID  ISBN
+----------- ----------- ------------------------------
+          1           1 978-0316015844
+          1           1 978-0316231886
+          1           2 978-0316015844
+          2           2 978-0316231886
+
+  4 record(s) selected.
+
+SELECT * FROM BookInstance WHERE ISBN IN ('978-0316015844','978-0316231886') AND InstanceID IN (1,2)
+
+ISBN                           INSTANCEID  CONDITION                      PRICE
+------------------------------ ----------- ------------------------------ ------------
+978-0316015844                           1 good                                  10.79
+978-0316015844                           2 good                                  10.79
+978-0316231886                           1 very good                              8.00
+978-0316231886                           2 good                                   7.81
+
+  4 record(s) selected.
+
+SELECT * FROM writtenBy WHERE AuthorID=1
+
+AUTHORID    ISBN
+----------- ------------------------------
+          1 978-0316015844
+          1 978-0316231886
+
+  2 record(s) selected.
+
+Therefore the price is 10.79 + 10.79 + 8.00 + 7.81 = 37.39
+
+Which is confirmed by
+
+call moneySpentOnAuthor('378282246310005',1,?)
+
+  Value of output parameters
+  --------------------------
+  Parameter Name  : MONEYSPENT
+  Parameter Value :  37.39
+
+  Return Status = 0
