@@ -1,3 +1,4 @@
+--Please run this after running Q3.clp
 
 SELECT ISBN, Title, Stock FROM Book
 SELECT * FROM AppliesTo WHERE CouponCode='CLEARANCE'
