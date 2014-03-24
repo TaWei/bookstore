@@ -10,8 +10,10 @@ import java.util.Scanner;
 
 public class QueryExecutor{
 	private Statement stm;
+	private Scanner keyboard;
 	
-	public QueryExecutor(){
+	public QueryExecutor(Scanner keyboard){
+		this.keyboard = keyboard;
 		DB2Connection db2Conn = new DB2Connection("jdbc:db2://db2.cs.mcgill.ca:50000/cs421", "cs421g18", "bs2014[$");
 		Connection conn = db2Conn.getConnection();
 		try{
@@ -23,20 +25,20 @@ public class QueryExecutor{
 	
 	public void addUser() {
 		String userName, firstName, lastName, email, password;
-		Scanner keyboard = new Scanner(System.in);
+		//Scanner keyboard = new Scanner(System.in);
 		String output = "";
 		
 		//Get the input from the user for all the attributes in the User table
 		System.out.print("Enter the user name: ");
-		userName = keyboard.nextLine();
+		userName = keyboard.next();
 		System.out.print("Enter the first name: " );
-		firstName = keyboard.nextLine();
+		firstName = keyboard.next();
 		System.out.print("Enter the last name: ");
-		lastName = keyboard.nextLine();
+		lastName = keyboard.next();
 		System.out.print("Enter the email: ");
-		email = keyboard.nextLine();
+		email = keyboard.next();
 		System.out.print("Enter the password: ");
-		password = keyboard.nextLine();
+		password = keyboard.next();
 		
 		try{
 			//Execute the insert
@@ -52,20 +54,20 @@ public class QueryExecutor{
 	}
 
 	public void addBook() {
-		Scanner keyboard = new Scanner(System.in);
+		//Scanner keyboard = new Scanner(System.in);
 		String isbn, title, summary, genre;
 		int stock;
 		String output = "";
 
 		//Get the input from the user for all the attributes in the Book table
 		System.out.print("Enter the isbn: ");
-		isbn = keyboard.nextLine();
+		isbn = keyboard.next();
 		System.out.print("Enter the title: " );
-		title = keyboard.nextLine();
+		title = keyboard.next();
 		System.out.print("Enter the summary: ");
-		summary = keyboard.nextLine();
+		summary = keyboard.next();
 		System.out.print("Enter genre: ");
-		genre = keyboard.nextLine();
+		genre = keyboard.next();
 		System.out.print("Enter the stock: ");
 		stock = keyboard.nextInt();
 		
@@ -83,7 +85,7 @@ public class QueryExecutor{
 	}
 
 	public void getBooksGreaterThanNStarsForUser() {
-		Scanner keyboard = new Scanner(System.in);
+	//	Scanner keyboard = new Scanner(System.in);
 		int choice;
 		String userName;
 		double stars;
@@ -137,7 +139,7 @@ public class QueryExecutor{
 
 	
 	public void getNBestCustomersForYear() {
-		Scanner keyboard = new Scanner(System.in);
+	//	Scanner keyboard = new Scanner(System.in);
 		int choice;
 		int noUsers, year;
 		ResultSet result;
@@ -173,7 +175,7 @@ public class QueryExecutor{
 	}
 
 	public void getNMostPopularGenresForYear() {
-		Scanner keyboard = new Scanner(System.in);
+		//Scanner keyboard = new Scanner(System.in);
 		int choice;
 		int noGenres, year;
 		ResultSet result;
@@ -209,7 +211,7 @@ public class QueryExecutor{
 	}
 
 	public void changeCouponExpirationDate() {
-		Scanner keyboard = new Scanner(System.in);
+	//	Scanner keyboard = new Scanner(System.in);
 		int choice;
 		String couponCode;
 		int yearEnd, monthEnd, dayEnd;
@@ -262,7 +264,7 @@ public class QueryExecutor{
 	}
 	
 	public void changeDestAddressOfActiveOrder() {
-		Scanner keyboard = new Scanner(System.in);
+	//	Scanner keyboard = new Scanner(System.in);
 		int choice;
 		int orderId;
 		int addrId;
@@ -298,7 +300,7 @@ public class QueryExecutor{
 												+ "where o.orderId = m.orderId and o.estArrivalDate <= CURRENT_TIMESTAMP and m.username ='"+userName+"'";
 			result = stm.executeQuery(sqlGetActiveOrderForUser);
 			output += "Choice\tOrder_Id\tEst. Arrival date\n";
-			output += "------\t--------\t-----------\n";
+			output += "------\t--------\t-----------------\n";
 			Map<Integer, Integer>choiceToOrder = new HashMap<Integer, Integer>();
 			count = 1;
 			while(result.next()){

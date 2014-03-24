@@ -1,0 +1,227 @@
+Successfully connected to comp421 db as user cs421g18...
+
+Please choose one of the following options:
+(1)-Add user
+(2)-Add book
+(3)-Get books ordered by user that are greater than N stars
+(4)-Get top N customers for a given year
+(5)-Get top N genres for a given year
+(6)-Extend coupon expiration date
+(7)-Change destination address of active order
+(8)-Quit
+Enter the user name: Enter the first name: Enter the last name: Enter the email: Enter the password: 
+Insert was successfull
+
+Please choose one of the following options:
+(1)-Add user
+(2)-Add book
+(3)-Get books ordered by user that are greater than N stars
+(4)-Get top N customers for a given year
+(5)-Get top N genres for a given year
+(6)-Extend coupon expiration date
+(7)-Change destination address of active order
+(8)-Quit
+Come back soon!
+Successfully connected to comp421 db as user cs421g18...
+
+Please choose one of the following options:
+(1)-Add user
+(2)-Add book
+(3)-Get books ordered by user that are greater than N stars
+(4)-Get top N customers for a given year
+(5)-Get top N genres for a given year
+(6)-Extend coupon expiration date
+(7)-Change destination address of active order
+(8)-Quit
+Enter the isbn: Enter the title: Enter the summary: Enter genre: Enter the stock: 
+Insert was successfull
+
+Please choose one of the following options:
+(1)-Add user
+(2)-Add book
+(3)-Get books ordered by user that are greater than N stars
+(4)-Get top N customers for a given year
+(5)-Get top N genres for a given year
+(6)-Extend coupon expiration date
+(7)-Change destination address of active order
+(8)-Quit
+Come back soon!
+Successfully connected to comp421 db as user cs421g18...
+
+Please choose one of the following options:
+(1)-Add user
+(2)-Add book
+(3)-Get books ordered by user that are greater than N stars
+(4)-Get top N customers for a given year
+(5)-Get top N genres for a given year
+(6)-Extend coupon expiration date
+(7)-Change destination address of active order
+(8)-Quit
+Choice	Username
+------	--------
+1	kpatel
+2	jamesta
+3	danym
+4	jsmith2
+5	janey92
+6	rjberger2
+7	jrsmith
+8	kishani
+
+Choose a user: Enter the minimum avgerage stars the ordered book should have: 
+Title		Avg Stars
+------		--------
+Twilight	4
+New Moon	5
+
+
+Please choose one of the following options:
+(1)-Add user
+(2)-Add book
+(3)-Get books ordered by user that are greater than N stars
+(4)-Get top N customers for a given year
+(5)-Get top N genres for a given year
+(6)-Extend coupon expiration date
+(7)-Change destination address of active order
+(8)-Quit
+Come back soon!
+Successfully connected to comp421 db as user cs421g18...
+
+Please choose one of the following options:
+(1)-Add user
+(2)-Add book
+(3)-Get books ordered by user that are greater than N stars
+(4)-Get top N customers for a given year
+(5)-Get top N genres for a given year
+(6)-Extend coupon expiration date
+(7)-Change destination address of active order
+(8)-Quit
+Enter the number of top users to include: 
+Enter the year to query: 
+
+Username	Orders_Made
+--------	-----------
+kpatel		2
+danym		1
+jsmith2		1
+jrsmith		1
+janey92		1
+jamesta		1
+
+
+Please choose one of the following options:
+(1)-Add user
+(2)-Add book
+(3)-Get books ordered by user that are greater than N stars
+(4)-Get top N customers for a given year
+(5)-Get top N genres for a given year
+(6)-Extend coupon expiration date
+(7)-Change destination address of active order
+(8)-Quit
+Come back soon!
+Successfully connected to comp421 db as user cs421g18...
+
+Please choose one of the following options:
+(1)-Add user
+(2)-Add book
+(3)-Get books ordered by user that are greater than N stars
+(4)-Get top N customers for a given year
+(5)-Get top N genres for a given year
+(6)-Extend coupon expiration date
+(7)-Change destination address of active order
+(8)-Quit
+Enter the number of top genres to include: Enter the year to query: 
+Genre		Orders_Made
+--------	-----------
+Romance		6
+Fitness		2
+Sci-Fi		1
+
+
+Please choose one of the following options:
+(1)-Add user
+(2)-Add book
+(3)-Get books ordered by user that are greater than N stars
+(4)-Get top N customers for a given year
+(5)-Get top N genres for a given year
+(6)-Extend coupon expiration date
+(7)-Change destination address of active order
+(8)-Quit
+Come back soon!
+Successfully connected to comp421 db as user cs421g18...
+
+Please choose one of the following options:
+(1)-Add user
+(2)-Add book
+(3)-Get books ordered by user that are greater than N stars
+(4)-Get top N customers for a given year
+(5)-Get top N genres for a given year
+(6)-Extend coupon expiration date
+(7)-Change destination address of active order
+(8)-Quit
+Choice	Couponcode
+------	----------
+1	25OFF
+2	2FOR1
+3	50OFF
+4	BESTDEALEVER
+5	XMASSPECIAL
+
+Enter choice of coupon: Enter the year the coupon is valid until: Enter the month the coupon is valid until: Ener the day the coupon is valid until: Enter the time (hh:mm:ss) the coupon is valid until: 
+Update was successfull
+
+Please choose one of the following options:
+(1)-Add user
+(2)-Add book
+(3)-Get books ordered by user that are greater than N stars
+(4)-Get top N customers for a given year
+(5)-Get top N genres for a given year
+(6)-Extend coupon expiration date
+(7)-Change destination address of active order
+(8)-Quit
+Come back soon!
+Successfully connected to comp421 db as user cs421g18...
+
+Please choose one of the following options:
+(1)-Add user
+(2)-Add book
+(3)-Get books ordered by user that are greater than N stars
+(4)-Get top N customers for a given year
+(5)-Get top N genres for a given year
+(6)-Extend coupon expiration date
+(7)-Change destination address of active order
+(8)-Quit
+Choice	Username
+------	--------
+1	kpatel
+2	jamesta
+3	danym
+4	jsmith2
+5	janey92
+6	rjberger2
+7	jrsmith
+8	kishani
+
+Choose a user: 
+Choice	Order_Id	Est. Arrival date
+------	--------	-----------
+1	1		2014-01-12 03:22:11.0
+
+Choose an order: 
+Choice	Addr_Id	Street
+------	-------	------
+1	1	5110 Big Walkway
+
+Choose an alternative address for this user: 
+The update was successfull
+
+Please choose one of the following options:
+(1)-Add user
+(2)-Add book
+(3)-Get books ordered by user that are greater than N stars
+(4)-Get top N customers for a given year
+(5)-Get top N genres for a given year
+(6)-Extend coupon expiration date
+(7)-Change destination address of active order
+(8)-Quit
+Come back soon!

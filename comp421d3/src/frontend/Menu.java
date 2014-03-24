@@ -21,11 +21,11 @@ public class Menu {
 	
 	public static void main(String[] args){
 		Menu menu = new Menu();
-		QueryExecutor qe = new QueryExecutor();
+		Scanner keyboard = new Scanner(System.in);
+		QueryExecutor qe = new QueryExecutor(keyboard);
 		
 		System.out.println("Successfully connected to comp421 db as user cs421g18...");
 		
-		Scanner keyboard = new Scanner(System.in);
 		int choice = 0;
 		
 		do{
@@ -54,5 +54,7 @@ public class Menu {
 				System.out.println("Come back soon!");
 			}
 		}while(choice != 8);
+		
+		keyboard.close();
 	}
 }
