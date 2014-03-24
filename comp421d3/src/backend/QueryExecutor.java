@@ -8,6 +8,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+import com.sun.org.apache.bcel.internal.generic.GETSTATIC;
+
 public class QueryExecutor{
 	private Statement stm;
 	private Scanner keyboard;
@@ -270,6 +272,7 @@ public class QueryExecutor{
 		int addrId;
 		String userName;
 		ResultSet result;
+		ResultSet resultTmp;
 		String output=""; 
 		
 		try{
@@ -318,14 +321,15 @@ public class QueryExecutor{
 			
 			//Display the addresses
 			output = "";
-			String sqlGetAddr = "select a.addrId, a.streetAddr from Address as a, livesAt as lA where a.addrId = lA.addrId and lA.username = '"+userName+"'";
+			String sqlGetAddr = "select a.addrId from Address as a, livesAt as lA where a.addrId = lA.addrId and lA.username = '"+userName+"'";
 			result = stm.executeQuery(sqlGetAddr);
 			output += "Choice\tAddr_Id\tStreet\n";
 			output += "------\t-------\t------\n";
 			Map<Integer, Integer>choiceToAddr = new HashMap<Integer, Integer>();
 			count = 1;
 			while(result.next()){
-				output += count+"\t"+result.getString("addrId")+"\t"+result.getString("streetAddr")+"\n";
+				output += count+"\t"+result.getString("addrId");				
+				output += "\t"+getXMlSteet(result.getInt("addrId"))+"\n";
 				choiceToAddr.put(count, result.getInt("addrId"));
 				count++;
 			}
@@ -349,5 +353,25 @@ public class QueryExecutor{
 			System.out.println(output);
 		}
 		
+	}
+	
+	public String getXMlSteet(int addrId){
+		DB2Connection db2Conn2 = new DB2Connection("jdbc:db2://db2.cs.mcgill.ca:50000/cs421", "cs421g18", "bs2014[$");
+		Connection conn2 = db2Conn2.getConnection();
+		Statement stm2;
+		
+		try{
+			stm2 = conn2.createStatement();
+			String sqlGetStreet = "xquery "
+					+ "let $street := db2-fn:sqlquery('SELECT addrInfo from Address WHERE  addrId = "+addrId+"')/addrInfo/street "
+					+ "return fn:data($street)";
+			ResultSet resultTmp = stm2.executeQuery(sqlGetStreet);
+			resultTmp.next();
+			return resultTmp.getString(1);
+		}catch(SQLException e){
+			e.printStackTrace();
+		}
+		
+		return "";
 	}
 }
