@@ -1,6 +1,8 @@
 --When a book's stock falls below 3, create a clearance 75% OFF coupon applicable to that book for the next 2 days. 
 --If there are books already on clearance, remove them from the sale.
 
+DROP TRIGGER ClearanceSpecial
+
 --#SET TERMINATOR @
 CREATE TRIGGER ClearanceSpecial AFTER UPDATE OF Stock ON Book
 REFERENCING NEW AS n FOR EACH ROW
