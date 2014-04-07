@@ -5,10 +5,10 @@
 
 (b) What does the schema look like just after the join?
 -------------------------------------------------------
-***USE THE DESCRIBE COMMAND FOR THIS QUESTION (YOU'LL HAVE TO CHANGE THE SCRIPT)***
+jnd: {fltrWon::date: bytearray,fltrWon::type: chararray,fltrWon::parl: int,fltrWon::prov: chararray,fltrWon::riding: chararray,fltrWon::lastname: chararray,fltrWon::firstname: chararray,fltrWon::gender: chararray,fltrWon::occupation: chararray,fltrWon::party: chararray,fltrWon::votes: int,fltrWon::percent: double,fltrWon::elected: int,fltrLost::date: bytearray,fltrLost::type: chararray,fltrLost::parl: int,fltrLost::prov: chararray,fltrLost::riding: chararray,fltrLost::lastname: chararray,fltrLost::firstname: chararray,fltrLost::gender: chararray,fltrLost::occupation: chararray,fltrLost::party: chararray,fltrLost::votes: int,fltrLost::percent: double,fltrLost::elected: int}
 
 (c) How long did the query run?
 -------------------------------
 *job_201404052348_0001: 50sec
 *job_201404052348_0002: 1mins, 16sec
-*total time = 2 min, 6sec
+*total_time = 2 min, 6sec
