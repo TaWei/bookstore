@@ -1,11 +1,14 @@
 (a) How many Maps and Reduces are generated in each job?
-job_201404052348_0001: 1 maps, 0 reduces
-job_201404052348_0002: 2 maps 1 reduce
+--------------------------------------------------------
+*job_201404052348_0001: 1 maps, 0 reduces
+*job_201404052348_0002: 2 maps, 1 reduce
 
 (b) What does the schema look like just after the join?
+-------------------------------------------------------
 ***USE THE DESCRIBE COMMAND FOR THIS QUESTION (YOU'LL HAVE TO CHANGE THE SCRIPT)***
 
 (c) How long did the query run?
-job_201404052348_0001: 50sec
-job_201404052348_0002: 1mins, 16sec
-total time = 2 min, 6sec
+-------------------------------
+*job_201404052348_0001: 50sec
+*job_201404052348_0002: 1mins, 16sec
+*total time = 2 min, 6sec
