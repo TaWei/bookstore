@@ -1,7 +1,7 @@
 (a) What does the schema look like immediately after the group by? Is is nested or flat?
 ----------------------------------------------------------------------------------------
 *typeGrpdTups: {group: int,typeFltrdTups: {(date: bytearray,type: chararray,parl: int,prov: chararray,riding: chararray,lastname: chararray,firstname: chararray,gender: chararray,occupation: chararray,party: chararray,votes: int,percent: double,elected: int)}}
-*It is nested -- the relation has tuples of the form (a, {(b,c), (d,e)}). In order to produce flat tuples, we can apply the expression GENERATE $0, flatten($1) to this tuple which will create new tuples: (a, b, c) an (a, d, e) which are flat.
+*It is nested -- the relation has tuples of the form (a, {(b,c), (d,e)}). In order to produce flat tuples, we can apply the expression GENERATE $0, flatten($1) to this tuple which will create new tuples: (a, b, c) and (a, d, e) which are flat.
 
 (b) How long did your query run?
 --------------------------------
